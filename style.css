@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 2%;
+  }
+  
+  body {
+    background: cover;
+    background-image: url(https://pmchollywoodlife.files.wordpress.com/2015/07/married-with-children-spinoff-ftr.jpg?w=600&h=350&crop=1);
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  .mwcLogo {
+    display: inline-block;
+    
+  }
