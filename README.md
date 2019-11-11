@@ -1,2 +1,2 @@
-# Quiz-App-v2
+# Quiz-App
 Married with Children Quiz App
