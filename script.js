@@ -151,17 +151,17 @@ function beginQuiz() {
 }
 
 function handleAnswer() {
-    $('.questionBox').on('click','.submit', function(event) {
+    $('.questionBox').on('submit', function(event) {
         event.preventDefault();
         $('.altbox').hide();
         $('.submit').hide();
         $('.questionBox').hide();
         $('.feedbackBox').show();
-        let selected = $('');
+        let selected = $('input:checked');
         let answer = selected.val();
         let correct = STORE[questNum].correctAnswer;
         if (answer === correct) {
-            correctAnswer();
+            rightAnswer();
         } else {
             wrongAnswer();
         }
@@ -191,7 +191,7 @@ function createHtml(questionIndex) {
 
 function rightAnswer() {
     $('.feedbackBox').html(`<h2>You got the right answer!</h2>
-    <p class = "quizMe">Al is proud</p>
+    <img src="images/Al bundy football.jpg" alt: "al bundy happy" class="images">
     <button type = "button" class = "next">Next>></button>`
     );
     updateScore();
@@ -199,6 +199,7 @@ function rightAnswer() {
 
 function wrongAnswer() {
     $('.feedbackBox').html(`<h2>You are wrong!</h2>
+    <img src="images/Al bundy screaming.jpg" alt: "al screaming" class="images>
     <p class = "quizMe">It's really:</p>
     <p class = "quizMe">${STORE[questNum].correctAnswer}</p>
     <button type = "button" class = "next">Next>></button>`);
@@ -218,6 +219,7 @@ function finalScore() {
 
     return $('.finalBox').html(
         `<h3> Your score is ${questScore} / 10</h3>
+        <img src="images/Al bundy.jpg" alt: "Al" class= "images">
         <button type = "submit" class = "startNew">Start New Quiz</button>`);
 }
 
