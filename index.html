@@ -1,41 +1,43 @@
 <!DOCTYPE html>
-<html lang = "en">  
+<html lang= "en">  
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="How well do you know Married...with Children?">
     <title>Married...with Children Quiz</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Julius+Sans+One&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header role = "banner" class = "header">
-      <a href = "index.html">
-        <img class = "mwcLogo" src = "https://www.portablepress.com/wp-content/uploads/2015/06/Married-With-Children.jpg" alt = "Show logo" class = "images">
+    <header class= "header">
+      <a href= "index.html">
+        <img class= "mwcLogo" src= "https://www.portablepress.com/wp-content/uploads/2015/06/Married-With-Children.jpg" alt= "Show logo">
       </a>
 
       <section>
         <ul>
-            <li class = "quizMe">Question:
-                <span class ="questNum">0</span>/10</li>
-            <li class = "quizMe">Score:
-                <span class = "questScore">0</span>/10</li>
+            <li class= "quizMe">Question:
+                <span class="questNum">0</span>/10</li>
+            <li class= "quizMe">Score:
+                <span class= "questScore">0</span>/10</li>
         </ul>
       </section>
     </header>
 
-    <main role = "region" class = "quizBox">
-      <section class = "topScreen">
+    <main class= "quizBox" aria-live="assertive">
+      <section class= "topScreen">
         <h1>How much do you know about America's favorite family?</h1>
-        <img src="images/bundy family.jpg" alt= "bundy family" class="images">
-        <button type = "button" class = "start">Start Quiz</button>
+        <img src="images/bundyfamily.jpg" alt= "bundy family" class="images">
+        <button type= "button" class= "start">Start Quiz</button>
       </section>
 
-      <section class = "questionBox altBox">
+      <section class= "questionBox altBox">
       </section>
-      <section class = "feedbackBox altBox">
+      <section class= "feedbackBox altBox">
       </section> 
-      <section class = "finalBox altBox"></section>
+      <section class= "finalBox altBox">
       </section>
 
     </main>
