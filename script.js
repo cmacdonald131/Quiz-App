@@ -191,7 +191,7 @@ function createHtml(questionIndex) {
 
 function rightAnswer() {
     $('.feedbackBox').html(`<h2>You got the right answer!</h2>
-    <img src="images/Al bundy football.jpg" alt: "al bundy happy" class="images">
+    <img src="images/Albundyfootball.jpg" alt: "al bundy happy" class="images">
     <button type = "button" class = "next">Next>></button>`
     );
     updateScore();
@@ -199,9 +199,9 @@ function rightAnswer() {
 
 function wrongAnswer() {
     $('.feedbackBox').html(`<h2>You are wrong!</h2>
-    <img src="images/Al bundy screaming.jpg" alt: "al screaming" class="images>
-    <p class = "quizMe">It's really:</p>
-    <p class = "quizMe">${STORE[questNum].correctAnswer}</p>
+    <img src="images/Albundyscreaming.jpg" alt: "al screaming" class="images width: 200px>
+    <p class = "quizYou">It's really:</p>
+    <p class = "quizYou">${STORE[questNum].correctAnswer}</p>
     <button type = "button" class = "next">Next>></button>`);
 }
 
@@ -219,7 +219,7 @@ function finalScore() {
 
     return $('.finalBox').html(
         `<h3> Your score is ${questScore} / 10</h3>
-        <img src="images/Al bundy.jpg" alt: "Al" class= "images">
+        <img src="images/Albundy.jpg" alt: "Al" class= "images">
         <button type = "submit" class = "startNew">Start New Quiz</button>`);
 }
 
