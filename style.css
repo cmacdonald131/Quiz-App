@@ -7,8 +7,9 @@
 
 body {
   color: black;
-  background-image: url(https://pmchollywoodlife.files.wordpress.com/2015/07/married-with-children-spinoff-ftr.jpg?w=600&h=350&crop=1);
-  background-size: auto;
+  background: lightblue;
+  background-size: cover;
+  
 }
 
 background {
@@ -21,6 +22,8 @@ background {
 
 .header {
   text-align:center;
+  font-family: 'Julius Sans One', sans-serif;
+  
 }
 
 .mwcLogo {
@@ -45,8 +48,9 @@ background {
 
 .images {
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   width: 90%;
+  overflow: hidden;
 }
 
 .quizBox {
@@ -73,21 +77,35 @@ background {
   border: 1px solid #371d0d;
   border-radius: 2%;
   width: 50%;
+  line-height: 1.5;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
+}
+
+.h1 {
+  padding-bottom: 40px;
 }
 
 .questionBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   text-align: left;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #371d0d;
   border-radius: 2%;
-  width: 33%;
+  width: 50%;
+  line-height: 1.5;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
+}
+
+.answers {
+  padding-bottom: 10px;
 }
 
 .feedbackBox {
@@ -97,12 +115,16 @@ background {
   justify-content: space-between;
   text-align: center;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #371d0d;
   border-radius: 2%;
   width: 50%;
+  line-height: 1;  
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
 }
 
 .finalBox {
@@ -118,6 +140,8 @@ background {
   border: 1px solid #371d0d;
   border-radius: 2%;
   width: 50%;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 16px;
 }
 
 label {
@@ -205,6 +229,14 @@ label {
 .quizMe {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.quizYou {
+  padding-left: 10px;
+  padding-right: 10px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  
 }
 
 .questionText {
