@@ -219,7 +219,7 @@ function finalScore() {
 
     return $('.finalBox').html(
         `<h3> Your score is ${questScore} / 10</h3>
-        <img src="images/Albundy.jpg" alt: "Al" class= "images">
+        <img src="images/albundy.jpg" alt: "Al" class= "images">
         <button type = "submit" class = "startNew">Start New Quiz</button>`);
 }
 
